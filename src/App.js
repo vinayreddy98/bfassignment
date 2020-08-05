@@ -88,7 +88,7 @@ class App extends Component {
                       selectedCurrency: e.target.value,
                       color:"green",
                       recentRates: [
-                        { buy: this.state.rates[e.target.value].buy },
+                        { buy: this.state.rates[e.target.value].value },
                       ],
                     });
                   }}
