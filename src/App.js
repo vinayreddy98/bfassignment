@@ -130,8 +130,8 @@ class App extends Component {
             {console.log(this.state.recentRates)}
             <LineChart data={this.state.recentRates} width={300} height={200}>
               <CartesianGrid strokeDasharray="3 3" />
-              <XAxis />
-              <YAxis domain={["auto", "auto"]} />
+              <XAxis tick={false} />
+              <YAxis domain={["auto", "auto"]} tick={false} />
               <Line type="monotone" dataKey="buy" stroke="#82ca9d" />
             </LineChart>
           </div>
