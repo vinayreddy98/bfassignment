@@ -5,10 +5,9 @@ import {
   CartesianGrid,
   XAxis,
   YAxis,
-  ResponsiveContainer,
 } from "recharts";
 import "./App.css";
-import InputLabel from "@material-ui/core/InputLabel";
+
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
@@ -54,7 +53,7 @@ class App extends Component {
             value: item.Data.buy,
             symbol: item.Data.symbol,
           };
-        });
+        return 0});
       }
 
       this.setState({
